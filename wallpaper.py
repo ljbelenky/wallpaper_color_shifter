@@ -1,5 +1,11 @@
 import numpy as np 
+import os
 from PIL import Image
+
+try:
+    os.makedirs('focal_fossa')
+except:
+    pass
 
 
 image = Image.open('Focal-Fossa-wallpaper.jpg')
