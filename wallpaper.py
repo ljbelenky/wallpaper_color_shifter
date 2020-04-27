@@ -8,7 +8,7 @@ except:
     pass
 
 
-image = Image.open('Focal-Fossa-wallpaper.jpg')
+image = Image.open('warty-final-ubuntu.jpg')
 
 image.show()
 
