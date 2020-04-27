@@ -6,7 +6,7 @@ Creates 512 images in the 'focal_fossa' directory with all combinations of color
 
 ## Original Artwork:
 
-![](Focal-Fossa-wallpaper.jpg)
+![](warty-final-ubuntu.jpg)
 
 I'm sorry I don't know who to credit for the original design.
 
