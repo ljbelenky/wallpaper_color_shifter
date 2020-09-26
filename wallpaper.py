@@ -2,13 +2,20 @@ import numpy as np
 import os
 from PIL import Image
 
+
+original_directory = '/usr/share/backgrounds/pop'
+new_directory = 'new_wallpaper'
+fname = 'ferdinand-stohr-149422.jpg'
+# fname = 'sebastien-gabriel-232361.jpg'
+
 try:
-    os.makedirs('focal_fossa')
+    os.makedirs(new_directory)
 except:
     pass
 
+f = os.path.join(original_directory, fname)
 
-image = Image.open('warty-final-ubuntu.jpg')
+image = Image.open(f)
 
 image.show()
 
@@ -29,5 +36,7 @@ for first in layers:
             j = np.stack([first, second, third], axis = 2)
 
             i = Image.fromarray(j)
-            i.save(f'focal_fossa/ff_{k}.png')
+
+            i.save(os.path.join(new_directory,f'{k}.png'))
+            # i.save(f'focal_fossa/ff_{k}.png')
             k +=1
